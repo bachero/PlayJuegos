@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginRight="10dp"
     android:stretchColumns="0,1,2"
     tools:context=".NewPlayer">
+
+    <include layout="@layout/toolbar_layout"></include>
 
     <TableRow
         android:layout_width="match_parent"
@@ -28,6 +29,7 @@
             android:layout_span="2"
             android:ems="10"
             android:inputType="textPersonName"
+            android:layout_marginRight="10dp"
             android:text="Name" />
 
     </TableRow>
@@ -44,7 +46,8 @@
             android:layout_span="2"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Phonetic name" />
+            android:text="Phonetic name"
+            android:layout_marginRight="10dp"/>
     </TableRow>
 
     <TableRow
@@ -59,7 +62,8 @@
             android:layout_span="2"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Nickname" />
+            android:text="Nickname"
+            android:layout_marginRight="10dp"/>
     </TableRow>
 
     <TableRow
@@ -86,6 +90,7 @@
 
         <Button
             android:id="@+id/button6"
+            style="@style/ButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
@@ -114,7 +119,8 @@
             android:layout_span="2"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Phone" />
+            android:text="Phone"
+            android:layout_marginRight="10dp"/>
 
     </TableRow>
 
@@ -126,7 +132,8 @@
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_span="3" />
+            android:layout_span="3"
+            android:layout_marginRight="10dp"/>
     </TableRow>
 
     <TableRow
@@ -149,6 +156,7 @@
             android:layout_span="2"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="E-mail" />
+            android:text="E-mail"
+            android:layout_marginRight="10dp"/>
     </TableRow>
 </TableLayout>
