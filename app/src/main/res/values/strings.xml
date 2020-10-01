@@ -3,4 +3,10 @@
     <string name="action_settings">Ajustes</string>
     <string name="action_search">Buscar</string>
     <string name="action_add">Añadir</string>
+    <string name="Name">Name</string>
+    <string name="PhoneticName">Phonetic name</string>
+    <string name="NickName">Nickname</string>
+    <string name="Phone">Phone</string>
+    <string name="mail">E-mail</string>
+
 </resources>

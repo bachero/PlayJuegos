@@ -33,6 +33,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(i)
     }
 
+    fun lanzarGeneros(){
+        val i = Intent(this, Genero::class.java)
+        startActivity(i)
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
@@ -40,7 +45,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.getItemId()) {
-            (R.id.action_search) -> {return true}
+            (R.id.action_search) ->{lanzarGeneros()
+            return true}
             (R.id.action_add) -> {return true}
             else -> {return super.onOptionsItemSelected(item)} }
     }
