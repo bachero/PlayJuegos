@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         val player = findViewById(R.id.newPlayer) as Button
         player.setOnClickListener { lanzarNewPlayer() }
 
+        val preference = findViewById(R.id.preferences) as Button
+        preference.setOnClickListener { lanzarPreferences() }
+
         val titulo = findViewById(R.id.titulo) as TextView
         titulo.setTypeface(Typeface.createFromAsset(assets, "Chicken Quiche.ttf"))
 
@@ -35,6 +38,11 @@ class MainActivity : AppCompatActivity() {
 
     fun lanzarGeneros(){
         val i = Intent(this, Genero::class.java)
+        startActivity(i)
+    }
+
+    fun lanzarPreferences(){
+        val i = Intent(this, Preferences::class.java)
         startActivity(i)
     }
 
